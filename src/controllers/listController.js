@@ -43,6 +43,7 @@ const render = (ctx) => {
       const element = create(resultItem.tag, {
         id: `${resultItem.id}_${index}`,
         role: "option",
+        title: result.value.title,
         innerHTML: result.match,
         inside: fragment,
         ...(resultItem.class && { class: resultItem.class }),
